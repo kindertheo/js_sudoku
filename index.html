@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1>Sudoku</h1>
+    <table id="sudoku-game">
+        <tbody>
+            <!-- top border -->
+            <tr>
+                <td class="topBorder leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="topBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder  bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder  bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder  bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder  bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+            <tr>
+                <td class="bottomBorder leftBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+                <td class="bottomBorder rightBorder"><input type="number" min="1" max="9" maxlength="1" size="1"></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+<script type="text/javascript" src="js/main.js"></script>
+
+</html>
